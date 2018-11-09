@@ -29,12 +29,13 @@ export default {
   methods:{
     getHomeInfo() {
       axios
-        .get("http://219.84.169.202/google/game_list")
+      // 接口地址
+        .get("http://baike.baidu.com/api/openapi/BaikeLemmaCardApi?scope=103&format=json&appid=379020&bk_key=%E9%93%B6%E9%AD%82&bk_length=600")
         .then(this.getHomeInfoSucc);
     },
     getHomeInfoSucc(res) {
-      console.log(res.data.data);
-      this.list = res.data.data
+      console.log(res.data);
+      this.list = res.data
     },
     handleCity(){
       // alert('city')
