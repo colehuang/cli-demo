@@ -15,6 +15,7 @@ import {mapMutations} from 'vuex'
 export default {
   name: 'gamelist',
   mounted() {
+    // 测试
   //一般获取数据
     // this.getHomeInfo();
   },
